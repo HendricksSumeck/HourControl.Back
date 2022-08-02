@@ -9,4 +9,5 @@ public interface IActivityService : IService<Activity>
 {
     Task<ActivityViewModel> AddAsync(ActivityDto entity);
     Task<ActivityViewModel> Update(ActivityDto entity);
+    Task<ActivityViewModel?> GetByIdActivity(Guid id);
 }

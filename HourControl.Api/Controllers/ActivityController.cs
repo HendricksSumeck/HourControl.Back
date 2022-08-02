@@ -41,9 +41,9 @@ public class ActivityController : ControllerBase
     }
     
     [HttpGet("{id:guid}")]
-    public async Task<ActionResult<Activity>> GetActivityById(Guid id)
+    public async Task<ActionResult<ActivityViewModel>> GetActivityById(Guid id)
     {
-        return await _activityService.GetById(id);
+        return await _activityService.GetByIdActivity(id);
     }
     
     [HttpGet]

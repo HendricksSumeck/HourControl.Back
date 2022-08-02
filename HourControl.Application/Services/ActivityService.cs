@@ -49,5 +49,11 @@ public class ActivityService: Service<Activity, IActivityRepository>, IActivityS
 
         return _mapper.Map<ActivityViewModel>(false);;
     }
-    
+
+    public async Task<ActivityViewModel?> GetByIdActivity(Guid id)
+    {
+        var activity = await _repository.GetById(id);
+        
+        return _mapper.Map<ActivityViewModel>(activity);
+    }
 }
