@@ -1,4 +1,4 @@
-# 🔗 SimpleApi
+# 🔗 HourControl
 
 APIs mínimas são arquitetadas para criar APIs HTTP com dependências mínimas. Eles são ideais para microsserviços e aplicativos 
 que desejam incluir apenas os arquivos, recursos e dependências mínimos no ASP.NET Core.
@@ -7,16 +7,16 @@ Este projeto implementa os conceitos básicos de construção de uma API Web mí
 
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/HendricksSumeck/SimpleApi?color=%2304D361">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/HendricksSumeck/HourControl.Back?color=%2304D361">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/HendricksSumeck/SimpleApi">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/HendricksSumeck/HourControl.Back">
 
-  <a href="https://github.com/HendricksSumeck/MinimalApi">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/HendricksSumeck/SimpleApi">
+  <a href="https://github.com/HendricksSumeck/HourControl.Back">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/HendricksSumeck/HourControl.Back">
   </a>
 
-  <a href="https://github.com/HendricksSumeck/MinimalApi/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/HendricksSumeck/SimpleApi?style=social">
+  <a href="https://github.com/HendricksSumeck/HourControl.Back/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/HendricksSumeck/HourControl.Back?style=social">
   </a>
 </p>
 
@@ -45,13 +45,13 @@ Além disto é bom ter uma IDE para trabalhar com o código como [Visual Studio]
 
 ```bash
 # Clone este repositório
-$ git clone git@github.com:HendricksSumeck/SimpleApi.git
+$ git clone git@github.com:HendricksSumeck/HourControl.Back.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd SimpleApi
+$ cd HourControl.Back
 
 # Vá para a pasta MinimalApi
-$ cd SimpleApi.Api
+$ cd HourControl.Api
 
 # Execute a aplicação
 $ dotnet run
@@ -63,10 +63,10 @@ $ dotnet run
 
 ```bash
 # Clone este repositório
-$ git clone git@github.com:HendricksSumeck/SimpleApi.git
+$ git clone git@github.com:HendricksSumeck/HourControl.Back.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd SimpleApi
+$ cd HourControl.Back
 
 # Execute o comando
 $ docker-compose -p pgslq -d
@@ -76,21 +76,21 @@ $ docker-compose -p pgslq -d
 
 ```bash
 # Clone este repositório
-$ git clone git@github.com:HendricksSumeck/SimpleApi.git
+$ git clone git@github.com:HendricksSumeck/HourControl.Back.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd SimpleApi
+$ cd HourControl.Back
 
 # Criar as migrações do banco de dados
-$ dotnet ef --startup-project SimpleApi.Infra.Data/ migrations add Inicial --context SimpleApiContext
+$ dotnet ef --startup-project HourControl.Infra.Data/ migrations add Inicial --context SimpleApiDbContext
 
 # Executar para criar o banco
-$ dotnet ef database update --startup-project SimpleApi.Infra.Data/ --context SimpleApiContext
+$ dotnet ef database update --startup-project HourControl.Infra.Data/ --context SimpleApiDbContext
 
 # Ou
 
-# Entrar no projeto SimpleApi.Migrator
-$ cd SimpleApi.Migrator
+# Entrar no projeto HourControl.Migrator
+$ cd HourControl.Migrator
 
 # Executar o projeto
 $ dotnet run

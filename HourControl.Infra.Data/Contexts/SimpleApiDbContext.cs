@@ -7,6 +7,7 @@ namespace HourControl.Infra.Data.Contexts;
 public sealed class SimpleApiDbContext : DbContext, ISimpleApiDbContext
 {
     public DbSet<Project> Projects { get; set; }
+    public DbSet<Activity> Activitys { get; set; }
     
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseNpgsql("Host=localhost;Port=5442;Database=HourControl;Username=postgres;Password=postgres");

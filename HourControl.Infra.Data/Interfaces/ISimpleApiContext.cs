@@ -8,6 +8,7 @@ public interface ISimpleApiDbContext : IDisposable
 {
     DatabaseFacade Database { get; }
     public DbSet<Project> Projects { get; set; }
+    public DbSet<Activity> Activitys { get; set; }
     
     DbSet<TEntity> Set<TEntity>() where TEntity : class;
     Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
