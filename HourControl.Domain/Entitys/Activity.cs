@@ -11,5 +11,5 @@ public class Activity : Entity
     public DateTime? Date { get; set; }
     public Guid? ProjectId { get; set; }
     
-    public virtual Project Project { get; set; }
+    public virtual Project? Project { get; set; }
 }
