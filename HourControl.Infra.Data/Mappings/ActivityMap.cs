@@ -27,9 +27,9 @@ public class ActivityMap : BaseEntityMap<Activity>
         builder.Property(e => e.Date)
             .HasColumnType(DataType.DateTime);
 
-        builder.HasOne(el => el.Project)
-            .WithMany(el => el.Activitys)
-            .HasForeignKey(el => el.ProjectId)
-            .OnDelete(DeleteBehavior.Restrict);
+        builder
+            .HasOne(p => p.Project)
+            .WithMany(p => p.Activitys)
+            .HasForeignKey(p => p.ProjectId);
     }
 }

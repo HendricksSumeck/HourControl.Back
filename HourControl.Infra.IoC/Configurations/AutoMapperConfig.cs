@@ -6,7 +6,7 @@ public static class AutoMapperConfig
 {
     public static void AddAutoMapperConfig(this IServiceCollection services)
     {
-        var coreAssembly = AppDomain.CurrentDomain.Load("SimpleApi.Application");
+        var coreAssembly = AppDomain.CurrentDomain.Load("HourControl.Application");
         
         services.AddAutoMapper(coreAssembly);
     }

@@ -4,7 +4,7 @@ namespace HourControl.Application.Dtos;
 
 public class ActivityDto
 {
-    public Guid? ActivityId { get; set; }
+    public Guid? ActivityId { get; private set; }
     public string Name { get; set; }
     public TimeSpan? TimeStart { get; set; }
     public TimeSpan? TimeEnd { get; set; }

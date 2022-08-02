@@ -20,4 +20,12 @@
       <ProjectReference Include="..\HourControl.Shared\HourControl.Shared.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Migrations" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Migrations\20220802150929_Inicial.Designer.cs" />
+    </ItemGroup>
+
 </Project>
